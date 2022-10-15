@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "11575069020",
+    "firebase_url": "https://juggle-st-app.firebaseio.com",
+    "project_id": "juggle-st-app",
+    "storage_bucket": "juggle-st-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:11575069020:android:ff67a07c99090e60dbd999",
+        "android_client_info": {
+          "package_name": "com.jugglestreet.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "11575069020-7n098ra7v1eth079r5nrflod7hblg8ok.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5ZRwhe-aPEiXcpffz4iySKrY2Ey9nEzw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "11575069020-7n098ra7v1eth079r5nrflod7hblg8ok.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

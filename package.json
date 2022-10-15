@@ -1,0 +1,37 @@
+{
+  "name": "app-frontend-v4",
+  "version": "0.0.1",
+  "description": "Juggle St App",
+  "author": "Amr Elsayed <amr@amrelsayed.com.au>",
+  "private": true,
+  "scripts": {
+    "ionic:build": "echo ionic:build"
+  },
+  "dependencies": {
+    "@capacitor-community/firebase-analytics": "1.0.1",
+    "@awesome-cordova-plugins/app-rate": "5.46.0",
+    "@awesome-cordova-plugins/core": "5.46.0",
+    "@awesome-cordova-plugins/native-storage": "5.46.0",
+    "@capacitor/android": "latest",
+    "@capacitor/app": "latest",
+    "@capacitor/core": "latest",
+    "@capacitor/device": "latest",
+    "@capacitor/ios": "latest",
+    "@capacitor/local-notifications": "latest",
+    "@capacitor/push-notifications": "latest",
+    "@capacitor/splash-screen": "latest",
+    "@capawesome/capacitor-badge": "2.0.1",
+    "@ionic-enterprise/app-version": "0.1.13",
+    "@ionic-enterprise/globalization": "1.11.3",
+    "@ionic-native/core": "5.36.0",
+    "@sentry/capacitor": "0.5.0",
+    "cordova-plugin-apprate": "1.7.2",
+    "cordova-plugin-dialogs": "2.0.2",
+    "cordova-plugin-inappbrowser": "5.0.0",
+    "cordova-plugin-ionic": "5.5.3",
+    "cordova-plugin-nativestorage": "2.3.2"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "latest"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Juggle St",
+  "integrations": {
+    "capacitor": {},
+    "enterprise": {
+      "keyId": 4748,
+      "productKey": "key_f1e08c15b756489ca0a3b781eaf78cdb",
+      "appId": "bbee2118",
+      "orgId": "79102e24-f1c3-4aa9-a99d-dee40bea8a13",
+      "registries": [
+        "@ionic-enterprise;https://registry.ionicframework.com/"
+      ]
+    }
+  },
+  "type": "custom",
+  "id": "bbee2118"
+}

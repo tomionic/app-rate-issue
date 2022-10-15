@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <title>Juggle Street</title>
+    <meta name="description" content="">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="cleartype" content="on">
+
+    <link rel="icon" type="image/png" sizes="128x128" href="icons/favicon-128x128.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .error-page {
+            margin: 10px
+        }
+
+        .js-logo-container {
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .error-container {
+            text-align: center;
+            margin: 10px auto;
+            font-size: 1em;
+            font-family: "sans-serif";
+            color: #000
+        }
+
+        .title {
+            font-size: 2em;
+            color: #878787
+        }
+
+        .error-message {
+            padding: 0 1em;
+            font-size: 1.1em;
+            color: #878787;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="error-page">
+
+        <div class="js-logo-container">
+            <img src="/icons/js-logo.png" style="height: 100px"/>
+        </div>
+        <div class="error-container">
+            <h1 class="title"></h1>
+            <p class="error-message">
+                Please wait...
+            </p>
+        </div>
+    </div>
+
+    <script>
+        setTimeout(function() {
+            // Delete access tokens.
+            try {
+                var domain;
+                var suffix;
+                switch (window.location.hostname) {
+                    case 'm.jugglestreet.com':
+                        domain = 'jugglestreet.com';
+                        suffix = '';
+                        break;
+                    case 'm.jugglestreet.com.au':
+                        domain = 'jugglestreet.com.au';
+                        suffix = '';
+                        break;
+                    case 'm.jugglestreet.co.nz':
+                        domain = 'jugglestreet.co.nz';
+                        suffix = '';
+                        break;
+                    default:
+                        domain = window.location.hostname;
+                        suffix = '-local';
+                }
+
+                var accessTokenKey = 'jugglestreet-access-token' + suffix;
+                var refreshTokenKey = 'jugglestreet-refresh-token' + suffix;
+
+                document.cookie = accessTokenKey + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/;domain=' + domain;
+                window.localStorage.removeItem(accessTokenKey);
+
+                document.cookie = refreshTokenKey + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/;domain=' + domain;
+                window.localStorage.removeItem(refreshTokenKey);
+            } catch (e) {
+                // Silent catch.
+            }
+            window.location = '/';
+        }, 2000);
+    </script>
+
+    <script>
+            (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-55628820-2', 'auto');
+            ga('send', 'pageview');
+        </script>
+</body>
+
+</html>
